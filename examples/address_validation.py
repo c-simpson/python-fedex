@@ -42,6 +42,7 @@ address1.Contact.EMailAddress = 'example_recipient@email.com'
 avs_request.add_address(address1)
 
 address2 = avs_request.create_wsdl_object_of_type('AddressToValidate')
+address2.ClientReferenceId = "Your ID for Recipient 2"
 address2.Address.StreetLines = ['320 S Cedros', '#200']
 address2.Address.City = 'Solana Beach'
 address2.Address.StateOrProvinceCode = 'CA'
